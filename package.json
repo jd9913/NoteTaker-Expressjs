@@ -8,7 +8,9 @@
     "jest": "^26.5.2",
     "shortid": "^2.2.15"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
   "scripts": {
     "test": "jest"
   },
