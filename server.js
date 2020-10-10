@@ -1,36 +1,19 @@
-const shortid=require('shortid');
-console.log(shortid.generate());
-const fs=require(db.json);
 const express=require('express');
+const PORT = process.env.PORT || 3001;
+const app = express();
+const apiRoutes=require('./routes/apiRoutes');
+const htmlRoutes=require('./routes/htmlRoutes');
 
-const app=express();
 
 app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 
+//use apiRoutes
 
-
-const PORT = process.env.PORT || 3001;
-const app = express();
-
-
-app.get('/', function(req,res){
-res.send('');
-
-});
-
-
-
-
-
-
-
-
-
-
-
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 
 
