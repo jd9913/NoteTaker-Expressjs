@@ -7,7 +7,7 @@ const saveNotes = require('../lib/notes');
 router.get('/notes', function (req, res) {
     saveNotes
         .grabNotes()
-        .then(notes => res.json(notes))
+        .then(note => res.json(note))
         .catch(err => res.status(500).json(err));
 });
 
