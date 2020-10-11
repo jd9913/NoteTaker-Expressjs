@@ -10,8 +10,7 @@ router.get('/notes', function (req, res) {
     res.send(    
     saveNotes
         .read())
-        //.then(note => res.json(note))
-      //  .catch(err => res.status(500).json(err));
+      
 
 });
 
@@ -20,8 +19,7 @@ router.get('/notes', function (req, res) {
 router.post('/notes', (req, res) => {
     saveNotes
         .createNote(req.body)
-       // .then((note) => res.json(note))
-     //   .catch(err => res.status(500).json(err));
+    
      res.send('working')
 });
 
