@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const saveNotes = require('../lib/saveNotes');
+const saveNotes = require('../lib/notes');
 
 //GET request
 
@@ -20,11 +20,11 @@ router.post('/notes', (req, res) => {
         .catch(err => res.status(500).json(err));
 });
 
-router.delete('/notes/:id', function(req,res){
-saveNotes
-.deleteNotes(req.params.id)
-.then(()=> res.json({ok:true}))
-.catch(err=> res.status(500).json(err));
+router.delete('/notes/:id', function (req, res) {
+    saveNotes
+        .deleteNotes(req.params.id)
+        .then(() => res.json({ ok: true }))
+        .catch(err => res.status(500).json(err));
 
 
 });
