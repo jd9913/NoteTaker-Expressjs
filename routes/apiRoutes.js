@@ -1,12 +1,12 @@
 const router = require('express').Router();
 
-const saveNote = require('../db/saveNote');
+const saveNote = require('../lib/notes');
 
 //GET request
 
 router.get('/notes', function (req, res) {
     saveNote
-        .retrieveNotes()
+        .getNotes()
         .then(notes => res.json(notes))
         .catch(err => res.status(500).json(err));
 });
