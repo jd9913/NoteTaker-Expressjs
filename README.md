@@ -36,7 +36,8 @@ Description
 ==
 >:email:Email: jd9913@gmail.com<br>
 >GitHub Username: jd9913<br>
->:link: Repository Link: repo: https://github.com/jd9913/NoteTaker-Expressjs<br>
+>:link: Repository Link: https://github.com/jd9913/NoteTaker-Expressjs<br>
+>:link: Heruko deployment Link: https://evening-tundra-68576.herokuapp.com/<br>
 
 [Licenses](#license)
 ==
