@@ -1,7 +1,7 @@
 
 const path = require('path');
 const fs = require('fs');
-const db=require("../data/db.json");
+const db=require("../../../data/db.json");
 
 
 
