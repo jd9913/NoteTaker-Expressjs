@@ -17,8 +17,16 @@ router.get('/notes', function (req, res) {
 });
 
 router.get("/notes/:id", function (req, res){
+    const { id }=req.params;
     let savedNotes=JSON.parse(fs.readFileSync(db, "utf8"));
-    res.json(savedNotes(req.params.id));
+
+    for(let i =0; i<savedNotes.length; i++){
+
+        if (savedNotes[i].id===id){
+            return res.send(savedNotes[i])
+        }
+    }
+   
 })
 
 router.post('/notes', (req, res) => {
@@ -29,9 +37,10 @@ router.post('/notes', (req, res) => {
 
    fs.writeFileSync(db, JSON.stringify(savedNotes));
    console.log("note saved");
+   
    res.json(savedNotes);
 
-    res.send('working')
+    
 });
 
 router.delete('/notes/:id', function (req, res) {

@@ -3,7 +3,7 @@
 
 const express = require('express');
 const app = express();
-const nodemon = require('nodemon');
+
 
 //route files
 const apiRoutes = require('./routes/apiRoutes');
