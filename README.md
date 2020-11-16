@@ -32,6 +32,9 @@ Description
 ==
 >see installation instructions--app works best on a local server
 
+>screenshot:<br>
+![] noteTakerscreenshot.png
+
 :question: [Questions](quest)
 ==
 >:email:Email: jd9913@gmail.com<br>
