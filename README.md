@@ -33,7 +33,7 @@ Description
 >see installation instructions--app works best on a local server
 
 >screenshot:<br>
-![notetaker] (/noteTakerscreenshot.png?raw=true "screenshot")<br>
+![notetaker](https://github.com/jd9913/NoteTaker-Expressjs/blob/main/noteTakerscreenshot.png)<br>
 
 :question: [Questions](quest)
 ==
