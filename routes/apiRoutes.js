@@ -26,7 +26,7 @@ router.get("/notes/:id", function (req, res){
             return res.send(savedNotes[i])
         }
     }
-   
+   res.send('no match found');
 })
 
 router.post('/notes', (req, res) => {
