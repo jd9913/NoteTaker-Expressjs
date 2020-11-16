@@ -33,7 +33,7 @@ Description
 >see installation instructions--app works best on a local server
 
 >screenshot:<br>
-![note taker screenshot] (./noteTakerscreenshot.png?raw=true "screenshot")<br>
+![notetaker] (./noteTakerscreenshot.png?raw=true "screenshot")<br>
 
 :question: [Questions](quest)
 ==
